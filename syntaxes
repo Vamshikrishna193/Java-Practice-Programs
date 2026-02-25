@@ -12,3 +12,102 @@ operators
 8.Unary plus and unary minus operators
 9.other operators
 
+examples:                                    
+=========
+i. Arthemitic operator:                                                    
+class Demo
+{
+ public static void main(String args[])
+{
+ int a=20;
+ int b=5;
+
+system.out.println(a+b);
+system.out.println(a-b);
+system.out.println(a*b);
+system.out.println(a/b);
+system.out.println(a%b);
+}
+}
+
+
+ii.
+class Demo
+{
+public static void main(String args[])
+{
+int a=10,b=5,c=2;
+int d=a+c/b;
+int e=a%b-c;
+System.out.println(d);
+System.out.println(e);
+}
+}
+
+
+2.Relational operators:
+i.class Demo
+{
+public static void main (String args[])
+{
+byte a=10,b=20;
+System.out.println(a>b);
+System.out.println(a<b);
+System.out.println(a>=b);
+System.out.println(a<=b);
+System.out.println(a==b);
+System.out.println(a!=b);
+}
+}
+
+
+3.Logiacl operator:
+i.
+class Demo
+{
+public static void main (String args[])
+{
+int a=10,b=5,c=9;
+boolean d=a>b && a>c;
+boolean e=b>a || a>c;
+System.out.println(d);
+System.out.println(e);
+}
+}
+
+ii.
+class Demo
+{
+public static void main (String args[])
+{
+long a=33,b=21;
+boolean c=a>5 && b<33;
+System.out.println(c);
+}
+}
+
+
+4.Increment & Decrement operator:
+i.
+class vamshi
+{
+public static void main(String args[])
+{
+long l=5,r=9;
+long p=l++ + ++r;
+System.out.println(p);
+}
+}
+
+ii.
+class sir
+{
+public static void main(String args[])
+{
+int a=10;
+++a;
+--a;
+System.out.println(--a);
+System.out.println(++a);
+}
+}
