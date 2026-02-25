@@ -1,1 +1,14 @@
+operators
+---------
+=>An operator is an special symbol that operates on data.
+=>In java operators are divided into 9 categories.
+1.Arthemitic operators
+2.Relational operators
+3.Logical operators
+4.Increment and Decrement operators
+5.Bitwise operators
+6.Assignment operators
+7.Conditional operators
+8.Unary plus and unary minus operators
+9.other operators
 
