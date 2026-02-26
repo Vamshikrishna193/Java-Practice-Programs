@@ -1,0 +1,37 @@
+control flow statements:
+========================
+=>control flow statements are used to manage the flow of execution in a program.
+=>divided into 3 categories.
+i)selction statements.
+ii)Iteration statement.
+iii)Jump statement.
+
+i)selection statement:
+=>if
+=>if else
+=>if else if--else 
+=>Nested if
+=>switch 
+
+examples:
+i.
+class Demo
+{
+public static void main(String args[])
+{
+int a=10;
+if(a>0);
+System.out.println("positive number");
+}
+}
+
+ii.
+class Demo
+{
+public static void main(String args[])
+{
+short s=10;
+if(s%2==0);
+System.out.println("it is even");
+}
+}
