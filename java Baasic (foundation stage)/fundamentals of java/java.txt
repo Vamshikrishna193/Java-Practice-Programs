@@ -1,0 +1,57 @@
+/*
+                             
+  Q1.What is java? Features of java.
+  sol: Java is a high-level,object oriented programming language,platform & technology.
+  features of java:
+  =>java is a platform independent.
+  =>platform independent because programs return in java language can be executed on any platform.
+  =>write once run anywhere.
+  
+  
+  Q2.JVM, JRE, JDK – architecture & roles.
+  sol: JVM:(Java Virtual Machine)It is a platform dependent.
+            =>Executes bytecode
+            =>Converts bytecode → machine code
+            =>Handles memory
+            =>Inside JRE.
+            
+       JRE:(Java Runtime Environment)
+          =>Is called java platform because java program runs under JRE.
+          =>Contains JVM.
+       
+       JDK:(Java Development Kit)
+          =>It is called as java software.
+          =>Latest version of JDK is 24.
+          =>contains JRE.
+          
+          
+  Q3.How Java code runs (Compilation & Execution flow).
+  sol:Program.java
+        ↓ (javac)
+      Program.class (bytecode)
+         ↓ (JVM)
+      Machine Code
+           ↓
+         Output
+         
+     Basic Structure of Java Program:
+*/     
+        class Demo
+        {
+        	public static void main(String[] args) 
+        	{
+        		System.out.println("Hello vamshi");
+        	}
+        }
+           
+        
+ /*
+    Q4.Installing Java & using IntelliJ/Eclipse
+    sol: I have Installed Eclipse.
+    
+    
+
+
+
+
+*/
