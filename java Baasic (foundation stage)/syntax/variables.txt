@@ -1,0 +1,21 @@
+/*
+    Q1.Variables.
+    sol: Variable is a container used to store data.
+        syntax: datatype variableName = value;
+
+    ex-1: 
+*/class Basicsyntax  
+{
+	public static void main(String[] args) 
+         {
+      	   int age=22;
+      	   char grade ='A';
+      	   double salary=500000.00;
+      	   
+      	   
+      	   System.out.println(age);
+      	   System.out.println(grade);
+      	   System.out.println(salary);
+      	    
+         }
+}
