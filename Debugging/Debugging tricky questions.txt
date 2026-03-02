@@ -1,0 +1,167 @@
+Debugging tricky questions
+==========================
+
+1.class TQ1_SemicolonBug {
+    public static void main(String[] args) {
+
+        int number = 5;
+        int sum = 0;
+
+        for(int i = 1; i <= number; i++); 
+        {
+            sum = sum + 1;
+        }
+
+        System.out.println("Sum: " + sum);
+
+        System.out.println("Program Ended");
+    }
+}
+
+ans: There is a semicolon after for loop.
+     Program runs but wrong output.
+
+--------------------------------------------------------
+2.class TQ2_OperatorBug {
+    public static void main(String[] args) {
+
+        int a = 5;
+        int b = 10;
+
+        if(a = b) {
+            System.out.println("Equal");
+        } else {
+            System.out.println("Not Equal");
+        }
+
+        System.out.println("Program Finished");
+    }
+}
+ans: = is assignment operator.
+     == is comparision operator.
+
+----------------------------------------------------------
+3.class TQ3_IncrementBug {
+    public static void main(String[] args) {
+
+        int x = 5;
+
+        int y = x++;
+
+        System.out.println("x value: " + x);
+        System.out.println("y value: " + y);
+
+        int z = ++x;
+
+        System.out.println("z value: " + z);
+
+        System.out.println("Program Ended");
+    }
+}
+ans: Here first y=5; then it increments y=6.
+     z=++x; first only it increments the value.
+     overall; x=6. 
+              y=5.
+              z=7.
+----------------------------------------------------------
+
+4.class TQ4_LogicalTrap {
+    public static void main(String[] args) {
+
+        int number = 4;
+        int product = 1;
+
+        for(int i = 1; i < number; i++) {
+            product = product * i;
+        }
+
+        System.out.println("Product: " + product);
+
+        if(product == 24)
+            System.out.println("Correct");
+        else
+            System.out.println("Wrong");
+
+        System.out.println("Program Ended");
+    }
+}
+
+ans: Here i<number it means it only run lops 1,2,3 and it skips 4.
+     i<=number it is correct , now eill get 24.
+
+-------------------------------------------------------------
+
+5.class Q5_CompileError {
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 20;
+
+        System.out.println("Program Started");
+
+        int sum = a + b;
+
+        System.out.println("Sum is: " + sum)
+
+        int x = 5;
+        int y = 6;
+        int result = x * y;
+
+        System.out.println("Multiplication: " + result);
+
+        System.out.println("Program Ended");
+    }
+}
+
+ans: semocolumn missing
+-------------------------------------------------------------------
+
+6.class Q6_RuntimeError {
+    public static void main(String[] args) {
+
+        int arr[] = new int[3];
+
+        arr[0] = 10;
+        arr[1] = 20;
+        arr[2] = 30;
+
+        System.out.println("Array Values:");
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
+        System.out.println(arr[2]);
+        System.out.println(arr[3]);
+
+        int sum = arr[0] + arr[1] + arr[2];
+
+        System.out.println("Sum: " + sum);
+    }
+}
+
+ans: index is 2, but array size is 3 that's the error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
